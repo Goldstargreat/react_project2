@@ -33,13 +33,9 @@ function Booklist(){
                       />
                   )
               })
-
           }
       </div>
     );
-
 }
-
-
 
 export default Booklist;
