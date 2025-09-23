@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import CommentList from "./chp05/CommentList";
+import Notification from "./chp06/Notification";
+import NotificationList from "./chp06/NotificationList";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <CommentList />
+        <NotificationList/>
     </React.StrictMode>
 );
 
