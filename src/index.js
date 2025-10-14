@@ -9,14 +9,16 @@ import ToggleFunction from "./chp08/ToggleFunction";
 import MyButton_Argument from "./chp08/MyButton_Argument";
 import InputTest from "./chp08/InputTest";
 import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
-
-
+import Greeting from "./chp09/ex01/Greeting";
+import LoginControl from "./chp09/ex02/LoginControl";
+import MainPageWarning from "./chp09/ex03/MainPageWarning";
+import LandingPage from "./chp09/closing_ex/LandingPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <ConfirmButtonFunction/>
+        <LandingPage/>
     </React.StrictMode>
 );
 
