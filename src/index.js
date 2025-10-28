@@ -2,23 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Toggle from "./chp08/Toggle";
-import Toggle_2 from "./chp08/Toggle_2";
-import Toggle_3_NewSyntax from "./chp08/Toggle_3_NewSyntax";
-import ToggleFunction from "./chp08/ToggleFunction";
-import MyButton_Argument from "./chp08/MyButton_Argument";
-import InputTest from "./chp08/InputTest";
-import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
-import Greeting from "./chp09/ex01/Greeting";
-import LoginControl from "./chp09/ex02/LoginControl";
-import MainPageWarning from "./chp09/ex03/MainPageWarning";
-import LandingPage from "./chp09/closing_ex/LandingPage";
+import AppNumberList from "./chp10/ex01/AppNumberList";
+import StudentAttendance from "./chp10/ex02/StudentAttendance";
+import AttendanceCard from "./chp10/ex03/AttendanceCard";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <LandingPage/>
+        <AttendanceCard/>
     </React.StrictMode>
 );
 
