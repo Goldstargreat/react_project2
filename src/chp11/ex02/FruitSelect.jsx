@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './FruitSelect.css'
 
 function FruitSelect() {
-    const [value, setValue] = useState('grape');
+    const [value, setValue] = useState('');
     const handleChange = (event) =>{
         setValue(event.target.value);
     }
@@ -14,8 +14,9 @@ function FruitSelect() {
     return(
         <form onSubmit={handleSubmit}>
             <label>
-                과일을 선택하세요
+                과일을 선택하세요:
                 <select value={value} onChange={handleChange}>
+                    <option>선택</option>
                     <option value={"pineapple"}>파인애플</option>
                     <option value={"watermelon"}>수박</option>
                     <option value={"chamoe"}>참외</option>
