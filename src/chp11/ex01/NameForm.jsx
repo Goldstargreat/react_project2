@@ -1,0 +1,49 @@
+import React, {useState} from "react";
+import './NameForm.css'
+
+function NameForm(props) {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [address, setAddress] = useState('');
+
+    const handleChange = (event) => {
+        const{target} = event;
+        switch (target.id){
+            case "name":
+                setName(target.value.toUpperCase());
+                break;
+            case "email":
+                setEmail(target.value);
+                break;
+            case "address":
+                setAddress(target.value);
+                break;
+            default:
+                break;
+        }
+    }
+    const handleSubmit = (event) => {
+        alert(`입력한 이름: ${name}\n입력된 이메일: ${email}\n입력된 주소: ${address}`);
+        event.preventDefault();
+    }
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                이름: <input type={"text"} id={"name"} onChange={handleChange}/>
+            </label>
+            <br />
+            <label>
+                이메일: <input type={"email"} id={"email"} onChange={handleChange}/>
+            </label>
+            <br />
+            <label>
+                주소: <textarea id={"address"} onChange={handleChange} rows="5" cols="20"/>
+            </label>
+            <br />
+            <button type={"submit"}>완료</button>
+        </form>
+    );
+}
+
+export default NameForm;
