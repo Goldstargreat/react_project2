@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import BoilVerdict from "./BoilVerdict";
 import './ConfirmBoilVerdict.css'
 
+
 function ConfirmBoilVerdict() {
     const [temperature, setTemperature] = useState("");
-    const handleTemperature = (event) => {
+    const handleTemperature = (event)=>{
         setTemperature(event.target.value);
     };
 
-    return (
-        <fieldset>
-            <legend>섭씨 온도를 입력하세요</legend>
-            <input value={temperature} onChange={handleTemperature} />
-            <BoilVerdict celsius={parseInt(temperature)} />
+    return(
+        <fieldset className={"boil-container"}>
+            <legend>섭씨 온도를 입력하세요.</legend>
+            <input type={"number"} value={temperature} onChange={handleTemperature}/>
+            <BoilVerdict celcius={parseInt(temperature)}/>
         </fieldset>
     );
 }
