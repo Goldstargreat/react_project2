@@ -1,0 +1,39 @@
+body {
+    background-color: #ffffff; /* 배경색을 흰색으로 변경 */
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center; /* 폼을 화면 가운데에 배치 */
+    align-items: center; /* 세로로도 중앙 배치 */
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: olive;
+}
+
+button {
+    padding: 1rem; /* 버튼 패딩을 조금 줄여서 디자인을 더 깔끔하게 */
+    background-color: #007bff; /* 기본 버튼 색상 파란색 */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px; /* 글자 크기 추가 */
+}
+
+button:hover {
+    background-color: #0056b3; /* hover 시 진한 파란색 */
+}
