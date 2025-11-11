@@ -4,6 +4,7 @@ function BoilVerdict(props){
     if (props.celsius >= 100) {
         return <p className={"is boiling"}>물이 끓습니다.</p>;
     }
+    if(props.celsius >= 0 && props.celsius< 100)
     return <p className={"not boiling"}>물이 끓지 않습니다.</p>;
 }
 export default BoilVerdict;
