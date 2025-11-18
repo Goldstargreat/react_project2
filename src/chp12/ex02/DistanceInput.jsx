@@ -19,7 +19,7 @@ function DistanceInput(props){
             <input type= {"text"}
                    className={styles.input}
                    value={props.distance}
-                   placeholder={`${unitNames[props.unit]}(을)를 입력하세요`}
+                   placeholder={`${unitNames[props.unit]}(을)를 입력하세요!`}
                    onChange={handlechange}/>
         </div>
     );
