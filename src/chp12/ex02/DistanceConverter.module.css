@@ -1,0 +1,146 @@
+/* 전체 컨테이너 */
+.container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 메인 카드 */
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 제목 */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* 입력 영역 */
+.inputWrapper {
+    margin-bottom: 25px;
+}
+
+.inputWrapper:last-of-type {
+    margin-bottom: 0;
+}
+
+/* 레전드(라벨) */
+.label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* 입력창 */
+.input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+.input::placeholder {
+    color: #bbb;
+}
+
+/* 화살표 구분선 */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #667eea;
+}
+
+/* 결과 표시 영역 */
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 12px;
+    border-left: 5px solid #667eea;
+    animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.resultText {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.resultValue {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.2rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .input {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .resultText {
+        font-size: 1rem;
+    }
+}
