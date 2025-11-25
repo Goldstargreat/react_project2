@@ -1,0 +1,32 @@
+/* 웹페이지 전체 배경색 설정 */
+body {
+    /* 배경색을 밝은 회색 (#e8e8e8)으로 조정 */
+    background-color: #e8e8e8;
+}
+
+/* FancyBorder 기본 스타일 */
+.FancyBorder {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* FancyBorder 컴포넌트의 기본 배경색: 연한 회색 */
+    background-color: #f4f4f4;
+}
+
+/* 색상별 FancyBorder 스타일 */
+.FancyBorder-blue {
+    border-color: blue; /* FancyBorder 컴포넌트에서 props.color가 "blue"일 때 적용 */
+    background-color: #e6f7ff; /* 연한 파란색 배경 */
+}
+
+/* Dialog 내부 요소 스타일 */
+.Dialog-title {
+    font-size: 1.5em;
+    color: #0056b3;
+}
+
+.Dialog-message {
+    font-size: 1em;
+    color: #333;
+}
