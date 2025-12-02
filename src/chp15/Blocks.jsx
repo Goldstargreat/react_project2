@@ -49,7 +49,6 @@ function Blocks(props){
                         </Block>
                     );
                 })
-
              }
       </Wrapper>
     );
